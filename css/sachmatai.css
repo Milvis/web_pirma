@@ -1,0 +1,42 @@
+body {
+    background-color: palegoldenrod;
+}
+
+/*.lenta {
+    width: 700px;
+    height: 500px;
+}*/
+
+.stulpelis {
+    width: 100px;
+    height: 100px;
+    background-color: White;
+    display: inline-block;
+}
+
+.stulpelis1 {
+    width: 100px;
+    height: 100px;
+    background-color: Blue;
+    display: inline-block;
+}
+
+.stulpelis2 {
+    width: 100px;
+    height: 100px;
+    background-color: Green;
+    display: inline-block;
+}
+
+.stulpelis3 {
+    width: 100px;
+    height: 100px;
+    background-color: Red;
+    display: inline-block;
+}
+.stulpelis4 {
+    width: 100px;
+    height: 100px;
+    background-color: Black;
+    display: inline-block;
+}
