@@ -33,3 +33,6 @@ nav .pervidury {
     height:100%;
 }
 
+.pervidury a:hover {
+    color:red;
+}

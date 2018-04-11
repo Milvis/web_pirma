@@ -1,0 +1,21 @@
+@keyframes profilis {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+     100% {
+        width: 250px;
+        height: 250px;
+    }
+}
+img[alt="Profilis"]{
+    width: 100px;
+    height: 100px;
+}
+
+img[alt="Profilis"]:hover {
+    background-color: red;
+    animation-name: profilis;
+    animation-duration: 4s;
+}
