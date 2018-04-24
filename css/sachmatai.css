@@ -6,6 +6,11 @@ body {
     width: 700px;
     height: 500px;
 }*/
+body {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
 
 .stulpelis {
     width: 100px;
@@ -34,9 +39,29 @@ body {
     background-color: Red;
     display: inline-block;
 }
-.stulpelis4 {
+
+.stulpelis  {
     width: 100px;
     height: 100px;
-    background-color: Black;
-    display: inline-block;
+    /*background-color: Black;*/
+    display: table-cell;
+}
+
+
+.juoda {
+    background-color: black !important;
+}
+
+#R2D2 {
+    width: 100px;
+    height: 100px;
+    background: url("/img/rob.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 2px;
+    position: relative;
+}
+
+#info{
+    float: right;
 }

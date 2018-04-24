@@ -1,0 +1,22 @@
+<h1>Labas {{vardas}}, pasirinko {{auto}}</h1>
+<br/>
+<form>
+    <!--<input name="vardas" type="text"  ng-model="meniu[0]".pavadinimas ng-init="vardas='Testas'"/>-->
+    <input name="vardas" type="text" ng-model="vardas" ng-init="vardas='Testas'"/>
+    <br/>
+    <br/>
+    <select name="cars" ng-model="auto">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br/>
+    <br/>
+    <textarea name="message" rows="5" cols="10">The cat was playing in the garden.</textarea>
+    <br/>
+    <br/>
+    <button name="vardas" type="submit">Click Me!</button>
+    <input name="vardas" type="submit" value="No Click Me!"/>
+    <a type="submit" href="#">No NO Click Me!!!</a>
+</form>

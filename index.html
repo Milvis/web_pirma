@@ -1,78 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="ManoAppsas">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
-    <title>Užduotis</title>
-    <link rel="stylesheet" href="css/resetas.css">
-    <link rel="stylesheet" href="css/sachmatai.css">
-    <link rel="stylesheet" href="css/meniu.css">
-    <link rel="stylesheet" href="css/turinys.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/pradzia.css">
-    <link rel="stylesheet" href="css/animacijos.css">
+    <title>Kontaktai</title>
 
 
 </head>
-<body>
-
+<body ng-cloak>
 <div class="container">
-    <div class="content" style="color: red">
-        <nav>
+    <div class="content">
+        <nav ng-controller="menuController as mc">
             <div class="pervidury">
                 <div>
                     <ul>
-                        <li>
-                            <a href="/index.html">Pradžia</a>
-                        </li>
-                        <li>
-                            <a href="/202/apie.html">Apie</a>
-                        </li>
-                        <li>
-                            <a href="/202/kontaktai.html">Kontaktai</a>
+                        <li ng-repeat="item in mc.meniu">
+                            <a href="{{item.adresas}}">{{item.pavadinimas}}</a>
+
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="juosta">
-            <aside>
-                <ul>
-                    <li>
-                        <a href="http://google.lt">Google.lt</a>
-                    </li>
-                    <li>
-                        <a href="http://bing.com">Bing.lt</a>
-                    </li>
-                    <li>
-                        <a href="http://delfi.lt">Delfi.lt</a>
-                    </li>
-                </ul>
-            </aside>
 
-
-            <div class="turinys">
-                <h1> Voverių puslapis</h1>
-                <p>
-                    <img src="img/vovere.jpg" alt="Profilis" width="350">
-                    <br/>
-                    Puslapio nuotrauka <br/>
-                    Puslapio nuotrauka <br/>
-                <hr>
-                Puslapio nuotrauka <br/>
-                Puslapio nuotrauka <br/>
-                </p>
-            </div>
-        </div>
-
-
-        <footer>
-            <div>Manopuslapis.lt &copy; 2018m. &copysr;</div>
-
-        </footer>
-
-    </div>
-
+<div class="info" ng-cloak>
+<ng-view></ng-view>
 </div>
-<script src="css/testas.js"></script>
+        <footer>
+            <div></div>
+            Visos teises saugomos &copy; 2018
+        </footer>
+    </div>
+</div>
+
+<!--mygtuka sukurti ir iskviesti -->
+<!--var R2D2 = $('#R2D2');-->
+<!--var juodas = $('#juodas');-->
+<!--kad veiktu robotukas-->
+
+<script src="css/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="css/AngularFailai/ManoAppsas.js"></script>
 </body>
 </html>
